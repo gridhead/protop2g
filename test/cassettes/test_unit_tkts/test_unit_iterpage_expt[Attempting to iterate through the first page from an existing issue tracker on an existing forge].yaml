@@ -67,14 +67,14 @@ interactions:
       Content-Length:
       - '3295'
       Content-Security-Policy:
-      - default-src 'self';script-src 'self' 'nonce-Q2RMdwuKDMpsoL3pDrpBF00IR'; style-src
-        'self' 'nonce-Q2RMdwuKDMpsoL3pDrpBF00IR'; object-src 'none';base-uri 'self';img-src
+      - default-src 'self';script-src 'self' 'nonce-B0iSvGu8DvsxFeXAlDstu8hJX'; style-src
+        'self' 'nonce-B0iSvGu8DvsxFeXAlDstu8hJX'; object-src 'none';base-uri 'self';img-src
         'self' https:;connect-src 'self' https://pagure.io:8088;frame-src https://docs.pagure.org;frame-ancestors
         https://pagure.io;
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Jan 2025 09:52:25 GMT
+      - Thu, 16 Jan 2025 19:52:02 GMT
       Keep-Alive:
       - timeout=5, max=100
       Referrer-Policy:

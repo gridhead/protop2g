@@ -21,26 +21,150 @@ interactions:
         \ \n      \"blocks\": [], \n      \"close_status\": null, \n      \"closed_at\"\
         : null, \n      \"closed_by\": null, \n      \"comments\": [], \n      \"\
         content\": \"# Describe what you would like us to do:\\r\\n----\\r\\n\\r\\\
-        nBack in #11933 we got the epel.io redirect working again.  However, something\
-        \ changed semi-recently and it's not working quite right.  `https://epel.io`\
-        \ redirects to `https://docs.fedoraproject.org/en-US/epel//`, and the extra\
-        \ trailing slash seems to be breaking the page's CSS.  The magnifying glass\
-        \ from the page's search box is huge, and most of the rest of the page doesn't\
-        \ render correctly.  Manually removing the extra trailing slash and reloading\
-        \ fixes the appearance.\\r\\n\\r\\n# When do you need this to be done by?\
-        \ (YYYY/MM/DD)\\r\\n----\\r\\n\\r\\nAs soon as possible.\", \n      \"custom_fields\"\
-        : [], \n      \"date_created\": \"1737000703\", \n      \"depends\": [], \n\
-        \      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12364\"\
-        , \n      \"id\": 12364, \n      \"last_updated\": \"1737000703\", \n    \
-        \  \"milestone\": null, \n      \"priority\": 1, \n      \"private\": false,\
-        \ \n      \"related_prs\": [], \n      \"status\": \"Open\", \n      \"tags\"\
-        : [], \n      \"title\": \"extra trailing slash on epel.io redirect breaks\
-        \ page rendering\", \n      \"user\": {\n        \"full_url\": \"https://pagure.io/user/carlwgeorge\"\
+        nI've been working on some tools as part of https://pagure.io/fedora-infrastructure/issue/7361\
+        \ in a personal repository: https://github.com/jeremycline/siguldry. Currently,\
+        \ it contains a drop-in replacement for pesign's daemon, although in the future\
+        \ I'd like it to also contain re-implementations of sigul-{client,server,bridge}.\\\
+        r\\n\\r\\nSince the hope is that this will eventually run in Fedora infra,\
+        \ I think it would be best if it was owned by the Fedora infra org. Having\
+        \ a team within the org would also be helpful.\\r\\n\\r\\nI can initiate the\
+        \ transfer from my end as long as folks are on-board with the idea. I think\
+        \ a fedora-infra org admin will need to accept the transfer and create a team\
+        \ to own it, but I'm not sure what that looks like.\\r\\n\\r\\n# When do you\
+        \ need this to be done by? (YYYY/MM/DD)\\r\\n----\\r\\n\\r\\nIt's not urgent,\
+        \ but I'd prefer it to happen sooner rather than later so there aren't too\
+        \ many links floating around.\", \n      \"custom_fields\": [], \n      \"\
+        date_created\": \"1737039464\", \n      \"depends\": [], \n      \"full_url\"\
+        : \"https://pagure.io/fedora-infrastructure/issue/12365\", \n      \"id\"\
+        : 12365, \n      \"last_updated\": \"1737039464\", \n      \"milestone\":\
+        \ null, \n      \"priority\": 1, \n      \"private\": false, \n      \"related_prs\"\
+        : [], \n      \"status\": \"Open\", \n      \"tags\": [], \n      \"title\"\
+        : \"Move personal GitHub repository to fedora-infra org\", \n      \"user\"\
+        : {\n        \"full_url\": \"https://pagure.io/user/jcline\", \n        \"\
+        fullname\": \"Jeremy Cline\", \n        \"name\": \"jcline\", \n        \"\
+        url_path\": \"user/jcline\"\n      }\n    }, \n    {\n      \"assignee\":\
+        \ {\n        \"full_url\": \"https://pagure.io/user/zlopez\", \n        \"\
+        fullname\": \"Michal Kone\\u010dn\\u00fd\", \n        \"name\": \"zlopez\"\
+        , \n        \"url_path\": \"user/zlopez\"\n      }, \n      \"blocks\": [],\
+        \ \n      \"boards\": [\n        {\n          \"board\": {\n            \"\
+        active\": true, \n            \"full_url\": \"https://pagure.io/fedora-infrastructure/boards/ops\"\
+        , \n            \"name\": \"ops\", \n            \"status\": [\n         \
+        \     {\n                \"bg_color\": \"#ffb300\", \n                \"close\"\
+        : false, \n                \"close_status\": null, \n                \"default\"\
+        : true, \n                \"name\": \"Backlog\"\n              }, \n     \
+        \         {\n                \"bg_color\": \"#f4ff64\", \n               \
+        \ \"close\": false, \n                \"close_status\": null, \n         \
+        \       \"default\": false, \n                \"name\": \"Triaged\"\n    \
+        \          }, \n              {\n                \"bg_color\": \"#99d200\"\
+        , \n                \"close\": false, \n                \"close_status\":\
+        \ null, \n                \"default\": false, \n                \"name\":\
+        \ \"In Progress\"\n              }, \n              {\n                \"\
+        bg_color\": \"#3c7bff\", \n                \"close\": false, \n          \
+        \      \"close_status\": null, \n                \"default\": false, \n  \
+        \              \"name\": \"In Review\"\n              }, \n              {\n\
+        \                \"bg_color\": \"#15d415\", \n                \"close\": true,\
+        \ \n                \"close_status\": \"Fixed\", \n                \"default\"\
+        : false, \n                \"name\": \"Done\"\n              }, \n       \
+        \       {\n                \"bg_color\": \"#e80909\", \n                \"\
+        close\": false, \n                \"close_status\": null, \n             \
+        \   \"default\": false, \n                \"name\": \"Blocked\"\n        \
+        \      }\n            ], \n            \"tag\": {\n              \"tag\":\
+        \ \"ops\", \n              \"tag_color\": \"#3efa0e\", \n              \"\
+        tag_description\": \"ops problem now...\"\n            }\n          }, \n\
+        \          \"rank\": 1186, \n          \"status\": {\n            \"bg_color\"\
+        : \"#ffb300\", \n            \"close\": false, \n            \"close_status\"\
+        : null, \n            \"default\": true, \n            \"name\": \"Backlog\"\
+        \n          }\n        }\n      ], \n      \"close_status\": \"Fixed\", \n\
+        \      \"closed_at\": \"1737027395\", \n      \"closed_by\": {\n        \"\
+        full_url\": \"https://pagure.io/user/zlopez\", \n        \"fullname\": \"\
+        Michal Kone\\u010dn\\u00fd\", \n        \"name\": \"zlopez\", \n        \"\
+        url_path\": \"user/zlopez\"\n      }, \n      \"comments\": [\n        {\n\
+        \          \"comment\": \"**Metadata Update from @zlopez**:\\n- Issue priority\
+        \ set to: Waiting on Assignee (was: Needs Review)\\n- Issue tagged with: low-trouble,\
+        \ medium-trouble, ops\", \n          \"date_created\": \"1737026401\", \n\
+        \          \"edited_on\": null, \n          \"editor\": null, \n         \
+        \ \"id\": 951481, \n          \"notification\": true, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/zlopez\", \n            \"fullname\"\
+        : \"Michal Kone\\u010dn\\u00fd\", \n            \"name\": \"zlopez\", \n \
+        \           \"url_path\": \"user/zlopez\"\n          }\n        }, \n    \
+        \    {\n          \"comment\": \"I tried to grep the ansible repository and\
+        \ I'm not sure where this redirect is setup as it didn't return any redirect\
+        \ for `epel.io`.\\r\\n\\r\\nEDIT: Found it. Just missed the commits.\", \n\
+        \          \"date_created\": \"1737026642\", \n          \"edited_on\": \"\
+        1737026717\", \n          \"editor\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\"\
+        , \n            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n         \
+        \   \"name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n  \
+        \        }, \n          \"id\": 951482, \n          \"notification\": false,\
+        \ \n          \"parent\": null, \n          \"reactions\": {}, \n        \
+        \  \"user\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\"\
+        , \n            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n         \
+        \   \"name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n  \
+        \        }\n        }, \n        {\n          \"comment\": \"**Metadata Update\
+        \ from @zlopez**:\\n- Issue assigned to zlopez\", \n          \"date_created\"\
+        : \"1737026759\", \n          \"edited_on\": null, \n          \"editor\"\
+        : null, \n          \"id\": 951483, \n          \"notification\": true, \n\
+        \          \"parent\": null, \n          \"reactions\": {}, \n          \"\
+        user\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\", \n\
+        \            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n            \"\
+        name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n        \
+        \  }\n        }, \n        {\n          \"comment\": \"I created a fix for\
+        \ it in https://pagure.io/fedora-infra/ansible/pull-request/2430\\r\\n\\r\\\
+        nWill deploy it as soon as CI passes.\", \n          \"date_created\": \"\
+        1737027123\", \n          \"edited_on\": null, \n          \"editor\": null,\
+        \ \n          \"id\": 951484, \n          \"notification\": false, \n    \
+        \      \"parent\": null, \n          \"reactions\": {}, \n          \"user\"\
+        : {\n            \"full_url\": \"https://pagure.io/user/zlopez\", \n     \
+        \       \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n            \"name\"\
+        : \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n          }\n \
+        \       }, \n        {\n          \"comment\": \" Commit [0716233b](https://pagure.io/fedora-infrastructure/c/0716233b)\
+        \ fixes this issue\", \n          \"date_created\": \"1737027394\", \n   \
+        \       \"edited_on\": null, \n          \"editor\": null, \n          \"\
+        id\": 951485, \n          \"notification\": false, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/zlopez\", \n            \"fullname\"\
+        : \"Michal Kone\\u010dn\\u00fd\", \n            \"name\": \"zlopez\", \n \
+        \           \"url_path\": \"user/zlopez\"\n          }\n        }, \n    \
+        \    {\n          \"comment\": \"This is now fixed.\", \n          \"date_created\"\
+        : \"1737028407\", \n          \"edited_on\": null, \n          \"editor\"\
+        : null, \n          \"id\": 951489, \n          \"notification\": false, \n\
+        \          \"parent\": null, \n          \"reactions\": {}, \n          \"\
+        user\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\", \n\
+        \            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n            \"\
+        name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n        \
+        \  }\n        }, \n        {\n          \"comment\": \"Thanks!\", \n     \
+        \     \"date_created\": \"1737048740\", \n          \"edited_on\": null, \n\
+        \          \"editor\": null, \n          \"id\": 951528, \n          \"notification\"\
+        : false, \n          \"parent\": null, \n          \"reactions\": {}, \n \
+        \         \"user\": {\n            \"full_url\": \"https://pagure.io/user/carlwgeorge\"\
+        , \n            \"fullname\": \"Carl George\", \n            \"name\": \"\
+        carlwgeorge\", \n            \"url_path\": \"user/carlwgeorge\"\n        \
+        \  }\n        }\n      ], \n      \"content\": \"# Describe what you would\
+        \ like us to do:\\r\\n----\\r\\n\\r\\nBack in #11933 we got the epel.io redirect\
+        \ working again.  However, something changed semi-recently and it's not working\
+        \ quite right.  `https://epel.io` redirects to `https://docs.fedoraproject.org/en-US/epel//`,\
+        \ and the extra trailing slash seems to be breaking the page's CSS.  The magnifying\
+        \ glass from the page's search box is huge, and most of the rest of the page\
+        \ doesn't render correctly.  Manually removing the extra trailing slash and\
+        \ reloading fixes the appearance.\\r\\n\\r\\n# When do you need this to be\
+        \ done by? (YYYY/MM/DD)\\r\\n----\\r\\n\\r\\nAs soon as possible.\", \n  \
+        \    \"custom_fields\": [], \n      \"date_created\": \"1737000703\", \n \
+        \     \"depends\": [], \n      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12364\"\
+        , \n      \"id\": 12364, \n      \"last_updated\": \"1737048740\", \n    \
+        \  \"milestone\": null, \n      \"priority\": 3, \n      \"private\": false,\
+        \ \n      \"related_prs\": [\n        {\n          \"id\": 2430, \n      \
+        \    \"title\": \"[proxies] Fix redirect for epel.io\"\n        }\n      ],\
+        \ \n      \"status\": \"Closed\", \n      \"tags\": [\n        \"low-trouble\"\
+        , \n        \"medium-trouble\", \n        \"ops\"\n      ], \n      \"title\"\
+        : \"extra trailing slash on epel.io redirect breaks page rendering\", \n \
+        \     \"user\": {\n        \"full_url\": \"https://pagure.io/user/carlwgeorge\"\
         , \n        \"fullname\": \"Carl George\", \n        \"name\": \"carlwgeorge\"\
         , \n        \"url_path\": \"user/carlwgeorge\"\n      }\n    }, \n    {\n\
-        \      \"assignee\": null, \n      \"blocks\": [], \n      \"boards\": [\n\
-        \        {\n          \"board\": {\n            \"active\": true, \n     \
-        \       \"full_url\": \"https://pagure.io/fedora-infrastructure/boards/ops\"\
+        \      \"assignee\": {\n        \"full_url\": \"https://pagure.io/user/zlopez\"\
+        , \n        \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n        \"name\"\
+        : \"zlopez\", \n        \"url_path\": \"user/zlopez\"\n      }, \n      \"\
+        blocks\": [], \n      \"boards\": [\n        {\n          \"board\": {\n \
+        \           \"active\": true, \n            \"full_url\": \"https://pagure.io/fedora-infrastructure/boards/ops\"\
         , \n            \"name\": \"ops\", \n            \"status\": [\n         \
         \     {\n                \"bg_color\": \"#ffb300\", \n                \"close\"\
         : false, \n                \"close_status\": null, \n                \"default\"\
@@ -67,9 +191,12 @@ interactions:
         \          \"rank\": 1185, \n          \"status\": {\n            \"bg_color\"\
         : \"#ffb300\", \n            \"close\": false, \n            \"close_status\"\
         : null, \n            \"default\": true, \n            \"name\": \"Backlog\"\
-        \n          }\n        }\n      ], \n      \"close_status\": null, \n    \
-        \  \"closed_at\": null, \n      \"closed_by\": null, \n      \"comments\"\
-        : [\n        {\n          \"comment\": \"**Metadata Update from @phsmoura**:\\\
+        \n          }\n        }\n      ], \n      \"close_status\": \"Fixed with\
+        \ Explanation\", \n      \"closed_at\": \"1737025990\", \n      \"closed_by\"\
+        : {\n        \"full_url\": \"https://pagure.io/user/zlopez\", \n        \"\
+        fullname\": \"Michal Kone\\u010dn\\u00fd\", \n        \"name\": \"zlopez\"\
+        , \n        \"url_path\": \"user/zlopez\"\n      }, \n      \"comments\":\
+        \ [\n        {\n          \"comment\": \"**Metadata Update from @phsmoura**:\\\
         n- Issue priority set to: Waiting on Assignee (was: Needs Review)\\n- Issue\
         \ tagged with: medium-gain, medium-trouble, ops\", \n          \"date_created\"\
         : \"1736971940\", \n          \"edited_on\": null, \n          \"editor\"\
@@ -78,20 +205,64 @@ interactions:
         user\": {\n            \"full_url\": \"https://pagure.io/user/phsmoura\",\
         \ \n            \"fullname\": \"Pedro Moura\", \n            \"name\": \"\
         phsmoura\", \n            \"url_path\": \"user/phsmoura\"\n          }\n \
-        \       }\n      ], \n      \"content\": \"# Describe what you would like\
-        \ us to do:\\r\\n----\\r\\n\\r\\nSomehow I messed up the rpms/valgrind git\
-        \ repo by trying to update a pull request.\\r\\nThere is now a pull/20 branch\
-        \ in the repository and when I try to pull I get:\\r\\n\\r\\nfatal: Cannot\
-        \ fetch both refs/heads/pull/20 and refs/pull/20/head to refs/remotes/origin/pull/20\\\
+        \       }, \n        {\n          \"comment\": \"**Metadata Update from @zlopez**:\\\
+        n- Issue assigned to zlopez\", \n          \"date_created\": \"1737025629\"\
+        , \n          \"edited_on\": null, \n          \"editor\": null, \n      \
+        \    \"id\": 951475, \n          \"notification\": true, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/zlopez\", \n            \"fullname\"\
+        : \"Michal Kone\\u010dn\\u00fd\", \n            \"name\": \"zlopez\", \n \
+        \           \"url_path\": \"user/zlopez\"\n          }\n        }, \n    \
+        \    {\n          \"comment\": \"The branch is now gone. I noticed that there\
+        \ is `pr/4` branch as well, is that also a mistake?\", \n          \"date_created\"\
+        : \"1737025689\", \n          \"edited_on\": null, \n          \"editor\"\
+        : null, \n          \"id\": 951476, \n          \"notification\": false, \n\
+        \          \"parent\": null, \n          \"reactions\": {\n            \"\
+        Heart\": [\n              \"mjw\"\n            ]\n          }, \n        \
+        \  \"user\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\"\
+        , \n            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n         \
+        \   \"name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n  \
+        \        }\n        }, \n        {\n          \"comment\": \"Thanks!\\r\\\
+        nAnd oops yes, that \\\"pr/4\\\" branch is also a mistake.\\r\\nSorry for\
+        \ messing up that repo so much.\", \n          \"date_created\": \"1737025803\"\
+        , \n          \"edited_on\": null, \n          \"editor\": null, \n      \
+        \    \"id\": 951477, \n          \"notification\": false, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/mjw\", \n            \"fullname\"\
+        : \"Mark Wielaard\", \n            \"name\": \"mjw\", \n            \"url_path\"\
+        : \"user/mjw\"\n          }\n        }, \n        {\n          \"comment\"\
+        : \"That one is also gone! :-)\\r\\n\\r\\nClosing this ticket as fixed and\
+        \ adding a [guide](https://docs.fedoraproject.org/en-US/infra/howtos/remove_branch_distgit/)\
+        \ for anybody (you need access to dist-git server) who wants to fix that in\
+        \ future.\", \n          \"date_created\": \"1737025992\", \n          \"\
+        edited_on\": null, \n          \"editor\": null, \n          \"id\": 951478,\
+        \ \n          \"notification\": false, \n          \"parent\": null, \n  \
+        \        \"reactions\": {}, \n          \"user\": {\n            \"full_url\"\
+        : \"https://pagure.io/user/zlopez\", \n            \"fullname\": \"Michal\
+        \ Kone\\u010dn\\u00fd\", \n            \"name\": \"zlopez\", \n          \
+        \  \"url_path\": \"user/zlopez\"\n          }\n        }, \n        {\n  \
+        \        \"comment\": \"**Metadata Update from @zlopez**:\\n- Issue close_status\
+        \ updated to: Fixed with Explanation\\n- Issue status updated to: Closed (was:\
+        \ Open)\", \n          \"date_created\": \"1737025992\", \n          \"edited_on\"\
+        : null, \n          \"editor\": null, \n          \"id\": 951479, \n     \
+        \     \"notification\": true, \n          \"parent\": null, \n          \"\
+        reactions\": {}, \n          \"user\": {\n            \"full_url\": \"https://pagure.io/user/zlopez\"\
+        , \n            \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n         \
+        \   \"name\": \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n  \
+        \        }\n        }\n      ], \n      \"content\": \"# Describe what you\
+        \ would like us to do:\\r\\n----\\r\\n\\r\\nSomehow I messed up the rpms/valgrind\
+        \ git repo by trying to update a pull request.\\r\\nThere is now a pull/20\
+        \ branch in the repository and when I try to pull I get:\\r\\n\\r\\nfatal:\
+        \ Cannot fetch both refs/heads/pull/20 and refs/pull/20/head to refs/remotes/origin/pull/20\\\
         r\\n\\r\\nI don't seem able to remove this (now remote) branch myself.\\r\\\
         nCould you remove it for me?\\r\\n\\r\\nIt can be seen here: https://src.fedoraproject.org/rpms/valgrind/tree/pull/20\\\
         r\\n\", \n      \"custom_fields\": [], \n      \"date_created\": \"1736897739\"\
         , \n      \"depends\": [], \n      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12363\"\
-        , \n      \"id\": 12363, \n      \"last_updated\": \"1736971940\", \n    \
+        , \n      \"id\": 12363, \n      \"last_updated\": \"1737025992\", \n    \
         \  \"milestone\": null, \n      \"priority\": 3, \n      \"private\": false,\
-        \ \n      \"related_prs\": [], \n      \"status\": \"Open\", \n      \"tags\"\
-        : [\n        \"medium-gain\", \n        \"medium-trouble\", \n        \"ops\"\
-        \n      ], \n      \"title\": \"Messed up rpm/valgrind pull request/branch\"\
+        \ \n      \"related_prs\": [], \n      \"status\": \"Closed\", \n      \"\
+        tags\": [\n        \"medium-gain\", \n        \"medium-trouble\", \n     \
+        \   \"ops\"\n      ], \n      \"title\": \"Messed up rpm/valgrind pull request/branch\"\
         , \n      \"user\": {\n        \"full_url\": \"https://pagure.io/user/mjw\"\
         , \n        \"fullname\": \"Mark Wielaard\", \n        \"name\": \"mjw\",\
         \ \n        \"url_path\": \"user/mjw\"\n      }\n    }, \n    {\n      \"\
@@ -216,6 +387,14 @@ interactions:
         reactions\": {}, \n          \"user\": {\n            \"full_url\": \"https://pagure.io/user/phsmoura\"\
         , \n            \"fullname\": \"Pedro Moura\", \n            \"name\": \"\
         phsmoura\", \n            \"url_path\": \"user/phsmoura\"\n          }\n \
+        \       }, \n        {\n          \"comment\": \"Could it have something to\
+        \ do with the new mailman deployment?\", \n          \"date_created\": \"\
+        1737025059\", \n          \"edited_on\": null, \n          \"editor\": null,\
+        \ \n          \"id\": 951474, \n          \"notification\": false, \n    \
+        \      \"parent\": null, \n          \"reactions\": {}, \n          \"user\"\
+        : {\n            \"full_url\": \"https://pagure.io/user/zlopez\", \n     \
+        \       \"fullname\": \"Michal Kone\\u010dn\\u00fd\", \n            \"name\"\
+        : \"zlopez\", \n            \"url_path\": \"user/zlopez\"\n          }\n \
         \       }\n      ], \n      \"content\": \"bastion seems to be seeing non\
         \ contributor accounts (ie, should be ones without a @fedoraproject.org alias)\
         \ and delivering bounces/whatever to them instead to /var/spool/mail on bastion.\
@@ -225,7 +404,7 @@ interactions:
         \ user?\\r\\n\\r\\nIn any case we need to fix it. Either in ipa, sssd or postfix.\
         \ \\r\\n\", \n      \"custom_fields\": [], \n      \"date_created\": \"1736895377\"\
         , \n      \"depends\": [], \n      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12361\"\
-        , \n      \"id\": 12361, \n      \"last_updated\": \"1736971602\", \n    \
+        , \n      \"id\": 12361, \n      \"last_updated\": \"1737025059\", \n    \
         \  \"milestone\": null, \n      \"priority\": 3, \n      \"private\": false,\
         \ \n      \"related_prs\": [], \n      \"status\": \"Open\", \n      \"tags\"\
         : [\n        \"medium-gain\", \n        \"medium-trouble\", \n        \"ops\"\
@@ -584,18 +763,26 @@ interactions:
         user\": {\n            \"full_url\": \"https://pagure.io/user/phsmoura\",\
         \ \n            \"fullname\": \"Pedro Moura\", \n            \"name\": \"\
         phsmoura\", \n            \"url_path\": \"user/phsmoura\"\n          }\n \
-        \       }\n      ], \n      \"content\": \"**NOTE**\\r\\n\\r\\nIf your issue\
-        \ is for security or deals with sensitive info please\\r\\nmark it as private\
-        \ using the checkbox below.\\r\\n\\r\\n# Describe what you would like us to\
-        \ do:\\r\\n----\\r\\nWe\\u2019re looking to evaluate Open Data Hub as an alternative\
-        \ to our current approach of directly accessing the PostgreSQL database. We\\\
-        u2019d like your help deploying Open Data Hub on the CommuniShift project:\
-        \ communishift-commops-analytics.\\r\\n\\r\\nWhat we would like to ask from\
-        \ infra if you can support us by:\\r\\n1. Run \\\"DSC Initialization\\\" from\
-        \ the ODH Operator needs to be ran first to prep the project, but needs to\
-        \ be ran as a cluster-admin.\\r\\n2. Run \\\"Data Science Cluster\\\" from\
-        \ the ODH Operator, but needs to be ran as a cluster-admin.\\r\\n\\r\\nBoth\
-        \ of these can be found on this page: https://console-openshift-console.apps.fedora.cj14.p1.openshiftapps.com/k8s/ns/communishift-commops-analytics/operators.coreos.com~v1alpha1~ClusterServiceVersion/opendatahub-operator.v2.22.0\\\
+        \       }, \n        {\n          \"comment\": \"**Metadata Update from @zlopez**:\\\
+        n- Issue tagged with: communishift\", \n          \"date_created\": \"1737023751\"\
+        , \n          \"edited_on\": null, \n          \"editor\": null, \n      \
+        \    \"id\": 951473, \n          \"notification\": true, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/zlopez\", \n            \"fullname\"\
+        : \"Michal Kone\\u010dn\\u00fd\", \n            \"name\": \"zlopez\", \n \
+        \           \"url_path\": \"user/zlopez\"\n          }\n        }\n      ],\
+        \ \n      \"content\": \"**NOTE**\\r\\n\\r\\nIf your issue is for security\
+        \ or deals with sensitive info please\\r\\nmark it as private using the checkbox\
+        \ below.\\r\\n\\r\\n# Describe what you would like us to do:\\r\\n----\\r\\\
+        nWe\\u2019re looking to evaluate Open Data Hub as an alternative to our current\
+        \ approach of directly accessing the PostgreSQL database. We\\u2019d like\
+        \ your help deploying Open Data Hub on the CommuniShift project: communishift-commops-analytics.\\\
+        r\\n\\r\\nWhat we would like to ask from infra if you can support us by:\\\
+        r\\n1. Run \\\"DSC Initialization\\\" from the ODH Operator needs to be ran\
+        \ first to prep the project, but needs to be ran as a cluster-admin.\\r\\\
+        n2. Run \\\"Data Science Cluster\\\" from the ODH Operator, but needs to be\
+        \ ran as a cluster-admin.\\r\\n\\r\\nBoth of these can be found on this page:\
+        \ https://console-openshift-console.apps.fedora.cj14.p1.openshiftapps.com/k8s/ns/communishift-commops-analytics/operators.coreos.com~v1alpha1~ClusterServiceVersion/opendatahub-operator.v2.22.0\\\
         r\\n\\r\\nThe configuration information is available here: https://opendatahub.io/docs/installing-open-data-hub/#installing-odh-components_installv2\\\
         r\\n\\r\\nFor our purposes, we only need really the Jupyter notebooks component.\
         \ We won\\u2019t be using AI training or model deployments.\\r\\n\\r\\n# When\
@@ -603,12 +790,12 @@ interactions:
         \ be great! This should be a low risk activity to deploy.\", \n      \"custom_fields\"\
         : [], \n      \"date_created\": \"1736618076\", \n      \"depends\": [], \n\
         \      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12357\"\
-        , \n      \"id\": 12357, \n      \"last_updated\": \"1736799050\", \n    \
+        , \n      \"id\": 12357, \n      \"last_updated\": \"1737023751\", \n    \
         \  \"milestone\": null, \n      \"priority\": 3, \n      \"private\": false,\
         \ \n      \"related_prs\": [], \n      \"status\": \"Open\", \n      \"tags\"\
-        : [\n        \"medium-gain\", \n        \"medium-trouble\", \n        \"ops\"\
-        \n      ], \n      \"title\": \"[CommOps] Open Data Hub on Communishift\"\
-        , \n      \"user\": {\n        \"full_url\": \"https://pagure.io/user/rwright\"\
+        : [\n        \"communishift\", \n        \"medium-gain\", \n        \"medium-trouble\"\
+        , \n        \"ops\"\n      ], \n      \"title\": \"[CommOps] Open Data Hub\
+        \ on Communishift\", \n      \"user\": {\n        \"full_url\": \"https://pagure.io/user/rwright\"\
         , \n        \"fullname\": \"Robert Wright\", \n        \"name\": \"rwright\"\
         , \n        \"url_path\": \"user/rwright\"\n      }\n    }, \n    {\n    \
         \  \"assignee\": null, \n      \"blocks\": [], \n      \"boards\": [\n   \
@@ -3267,70 +3454,8 @@ interactions:
         : \"Can't log into elections.fedoraproject.org\", \n      \"user\": {\n  \
         \      \"full_url\": \"https://pagure.io/user/vwbusguy\", \n        \"fullname\"\
         : \"Scott Williams\", \n        \"name\": \"vwbusguy\", \n        \"url_path\"\
-        : \"user/vwbusguy\"\n      }\n    }, \n    {\n      \"assignee\": null, \n\
-        \      \"blocks\": [], \n      \"close_status\": \"Invalid\", \n      \"closed_at\"\
-        : \"1733944492\", \n      \"closed_by\": {\n        \"full_url\": \"https://pagure.io/user/kevin\"\
-        , \n        \"fullname\": \"Kevin Fenzi\", \n        \"name\": \"kevin\",\
-        \ \n        \"url_path\": \"user/kevin\"\n      }, \n      \"comments\": [\n\
-        \        {\n          \"comment\": \"> The system boots systematically to\
-        \ an older kernel.\\r\\n> How can I modify that.\\r\\n> Here the contents\
-        \ of /boot\\r\\n> ---\\r\\n> config-6.11.11-300.fc41.x86_64\\r\\n> config-6.11.4-301.fc41.x86_64\\\
-        r\\n> efi\\r\\n> grub2\\r\\n> initramfs-0-rescue-ad6013f60a5d449a862dcac9aaaef59c.img\\\
-        r\\n> initramfs-6.11.11-300.fc41.x86_64.img\\r\\n> initramfs-6.11.4-301.fc41.x86_64.img\\\
-        r\\n> loader\\r\\n> lost+found\\r\\n> symvers-6.11.11-300.fc41.x86_64.xz\\\
-        r\\n> symvers-6.11.4-301.fc41.x86_64.xz\\r\\n> System.map-6.11.11-300.fc41.x86_64\\\
-        r\\n> System.map-6.11.4-301.fc41.x86_64\\r\\n> vmlinuz-0-rescue-ad6013f60a5d449a862dcac9aaaef59c\\\
-        r\\n> vmlinuz-6.11.11-300.fc41.x86_64\\r\\n> vmlinuz-6.11.4-301.fc41.x86_64\\\
-        r\\n> ---\\r\\n> Removing all 6.11.4-300 ???\\r\\n> Thanks for help\\r\\n\\\
-        r\\nSorry, I see that I am wrong.\\r\\nBooting 6.11.11-300.fc41.x86_64 hangs\
-        \ and I have to power off the system.\\r\\nSo the problem is why 6.11.11-300.fc41.x86_64\
-        \ hangs and I don't get any output by pressing ESC.\", \n          \"date_created\"\
-        : \"1733935141\", \n          \"edited_on\": null, \n          \"editor\"\
-        : null, \n          \"id\": 948176, \n          \"notification\": false, \n\
-        \          \"parent\": null, \n          \"reactions\": {}, \n          \"\
-        user\": {\n            \"full_url\": \"https://pagure.io/user/curano\", \n\
-        \            \"fullname\": \"Rudolf K\\u00fcnzli\", \n            \"name\"\
-        : \"curano\", \n            \"url_path\": \"user/curano\"\n          }\n \
-        \       }, \n        {\n          \"comment\": \"Hey. Sorry you're having\
-        \ an issue, but this isn't the right place for your query. \\r\\n\\r\\nThis\
-        \ is the tracker for problems with the servers/infrastructure that builds\
-        \ and distributes Fedora. \\r\\n\\r\\nSee: https://docs.fedoraproject.org/en-US/fedora-server/server-communicating/\\\
-        r\\n\\r\\nIn particular you should inquire on the discussion forum and hopefully\
-        \ they can direct you to an answer or at least where to file a bug on it.\
-        \ \\r\\n\\r\\nHope that helps and hope you get the issue sorted!\", \n   \
-        \       \"date_created\": \"1733944492\", \n          \"edited_on\": null,\
-        \ \n          \"editor\": null, \n          \"id\": 948181, \n          \"\
-        notification\": false, \n          \"parent\": null, \n          \"reactions\"\
-        : {}, \n          \"user\": {\n            \"full_url\": \"https://pagure.io/user/kevin\"\
-        , \n            \"fullname\": \"Kevin Fenzi\", \n            \"name\": \"\
-        kevin\", \n            \"url_path\": \"user/kevin\"\n          }\n       \
-        \ }, \n        {\n          \"comment\": \"**Metadata Update from @kevin**:\\\
-        n- Issue close_status updated to: Invalid\\n- Issue status updated to: Closed\
-        \ (was: Open)\", \n          \"date_created\": \"1733944493\", \n        \
-        \  \"edited_on\": null, \n          \"editor\": null, \n          \"id\":\
-        \ 948182, \n          \"notification\": true, \n          \"parent\": null,\
-        \ \n          \"reactions\": {}, \n          \"user\": {\n            \"full_url\"\
-        : \"https://pagure.io/user/kevin\", \n            \"fullname\": \"Kevin Fenzi\"\
-        , \n            \"name\": \"kevin\", \n            \"url_path\": \"user/kevin\"\
-        \n          }\n        }\n      ], \n      \"content\": \"The system boots\
-        \ systematically to an older kernel.\\r\\nHow can I modify that.\\r\\nHere\
-        \ the contents of /boot\\r\\n---\\r\\nconfig-6.11.11-300.fc41.x86_64\\r\\\
-        nconfig-6.11.4-301.fc41.x86_64\\r\\nefi\\r\\ngrub2\\r\\ninitramfs-0-rescue-ad6013f60a5d449a862dcac9aaaef59c.img\\\
-        r\\ninitramfs-6.11.11-300.fc41.x86_64.img\\r\\ninitramfs-6.11.4-301.fc41.x86_64.img\\\
-        r\\nloader\\r\\nlost+found\\r\\nsymvers-6.11.11-300.fc41.x86_64.xz\\r\\nsymvers-6.11.4-301.fc41.x86_64.xz\\\
-        r\\nSystem.map-6.11.11-300.fc41.x86_64\\r\\nSystem.map-6.11.4-301.fc41.x86_64\\\
-        r\\nvmlinuz-0-rescue-ad6013f60a5d449a862dcac9aaaef59c\\r\\nvmlinuz-6.11.11-300.fc41.x86_64\\\
-        r\\nvmlinuz-6.11.4-301.fc41.x86_64\\r\\n---\\r\\nRemoving all 6.11.4-300 ???\\\
-        r\\nThanks for help\", \n      \"custom_fields\": [], \n      \"date_created\"\
-        : \"1733934960\", \n      \"depends\": [], \n      \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/12329\"\
-        , \n      \"id\": 12329, \n      \"last_updated\": \"1733944493\", \n    \
-        \  \"milestone\": null, \n      \"priority\": 1, \n      \"private\": false,\
-        \ \n      \"related_prs\": [], \n      \"status\": \"Closed\", \n      \"\
-        tags\": [], \n      \"title\": \"System boots older kernel\", \n      \"user\"\
-        : {\n        \"full_url\": \"https://pagure.io/user/curano\", \n        \"\
-        fullname\": \"Rudolf K\\u00fcnzli\", \n        \"name\": \"curano\", \n  \
-        \      \"url_path\": \"user/curano\"\n      }\n    }\n  ], \n  \"pagination\"\
-        : {\n    \"first\": \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=1\"\
+        : \"user/vwbusguy\"\n      }\n    }\n  ], \n  \"pagination\": {\n    \"first\"\
+        : \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=1\"\
         , \n    \"last\": \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=346\"\
         , \n    \"next\": \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=2\"\
         , \n    \"page\": 1, \n    \"pages\": 346, \n    \"per_page\": 35, \n    \"\
@@ -3339,16 +3464,16 @@ interactions:
       Connection:
       - Upgrade, Keep-Alive
       Content-Length:
-      - '234619'
+      - '242942'
       Content-Security-Policy:
-      - default-src 'self';script-src 'self' 'nonce-F616SIeT0Dg4sUub9cBwkJskD'; style-src
-        'self' 'nonce-F616SIeT0Dg4sUub9cBwkJskD'; object-src 'none';base-uri 'self';img-src
+      - default-src 'self';script-src 'self' 'nonce-g55qXPuKKOSsaACF3uvwls0SB'; style-src
+        'self' 'nonce-g55qXPuKKOSsaACF3uvwls0SB'; object-src 'none';base-uri 'self';img-src
         'self' https:;connect-src 'self' https://pagure.io:8088;frame-src https://docs.pagure.org;frame-ancestors
         https://pagure.io;
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Jan 2025 09:52:10 GMT
+      - Thu, 16 Jan 2025 19:51:47 GMT
       Keep-Alive:
       - timeout=5, max=100
       Referrer-Policy:
@@ -3388,20 +3513,50 @@ interactions:
         \    \"milestones\": [], \n    \"no_stones\": null, \n    \"order\": null,\
         \ \n    \"priority\": null, \n    \"since\": null, \n    \"status\": \"all\"\
         , \n    \"tags\": []\n  }, \n  \"issues\": [\n    {\n      \"assignee\": {\n\
-        \        \"full_url\": \"https://pagure.io/user/toshio\", \n        \"fullname\"\
-        : \"Toshio \\u304f\\u3089\\u3068\\u307f\", \n        \"name\": \"toshio\"\
-        , \n        \"url_path\": \"user/toshio\"\n      }, \n      \"blocks\": [],\
-        \ \n      \"close_status\": \"Fixed\", \n      \"closed_at\": null, \n   \
-        \   \"closed_by\": null, \n      \"comments\": [\n        {\n          \"\
-        comment\": \"This information isn't kept in the database.  I've added it to\
-        \ the template for now but we need to keep the information separately in the\
-        \ next version of the voting application.\", \n          \"date_created\"\
-        : \"1183592827\", \n          \"edited_on\": null, \n          \"editor\"\
-        : null, \n          \"id\": 11398, \n          \"notification\": false, \n\
-        \          \"parent\": null, \n          \"reactions\": {}, \n          \"\
-        user\": {\n            \"full_url\": \"https://pagure.io/user/toshio\", \n\
-        \            \"fullname\": \"Toshio \\u304f\\u3089\\u3068\\u307f\", \n   \
-        \         \"name\": \"toshio\", \n            \"url_path\": \"user/toshio\"\
+        \        \"full_url\": \"https://pagure.io/user/mmcgrath\", \n        \"fullname\"\
+        : \"Mike McGrath\", \n        \"name\": \"mmcgrath\", \n        \"url_path\"\
+        : \"user/mmcgrath\"\n      }, \n      \"blocks\": [], \n      \"close_status\"\
+        : \"Fixed\", \n      \"closed_at\": null, \n      \"closed_by\": null, \n\
+        \      \"comments\": [\n        {\n          \"comment\": \"This should be\
+        \ set up now.  Take a look.\\r\\n\\r\\nhttp://fedoraproject.org/awstats//translate/awstats.translate.fedoraproject.org.html\"\
+        , \n          \"date_created\": \"1184189180\", \n          \"edited_on\"\
+        : null, \n          \"editor\": null, \n          \"id\": 20850, \n      \
+        \    \"notification\": false, \n          \"parent\": null, \n          \"\
+        reactions\": {}, \n          \"user\": {\n            \"full_url\": \"https://pagure.io/user/mmcgrath\"\
+        , \n            \"fullname\": \"Mike McGrath\", \n            \"name\": \"\
+        mmcgrath\", \n            \"url_path\": \"user/mmcgrath\"\n          }\n \
+        \       }, \n        {\n          \"comment\": \"This seems to be working\
+        \ fine, closing ticket.\", \n          \"date_created\": \"1184625780\", \n\
+        \          \"edited_on\": null, \n          \"editor\": null, \n         \
+        \ \"id\": 20849, \n          \"notification\": false, \n          \"parent\"\
+        : null, \n          \"reactions\": {}, \n          \"user\": {\n         \
+        \   \"full_url\": \"https://pagure.io/user/mmcgrath\", \n            \"fullname\"\
+        : \"Mike McGrath\", \n            \"name\": \"mmcgrath\", \n            \"\
+        url_path\": \"user/mmcgrath\"\n          }\n        }\n      ], \n      \"\
+        content\": \"need... more... stats...\", \n      \"custom_fields\": [], \n\
+        \      \"date_created\": \"1183593258\", \n      \"depends\": [], \n     \
+        \ \"full_url\": \"https://pagure.io/fedora-infrastructure/issue/6\", \n  \
+        \    \"id\": 6, \n      \"last_updated\": \"1184625780\", \n      \"milestone\"\
+        : null, \n      \"priority\": null, \n      \"private\": false, \n      \"\
+        related_prs\": [], \n      \"status\": \"Closed\", \n      \"tags\": [], \n\
+        \      \"title\": \"Enable awstats for translate.fedoraproject.org\", \n \
+        \     \"user\": {\n        \"full_url\": \"https://pagure.io/user/glezos\"\
+        , \n        \"fullname\": \"Dimitris Glezos\", \n        \"name\": \"glezos\"\
+        , \n        \"url_path\": \"user/glezos\"\n      }\n    }, \n    {\n     \
+        \ \"assignee\": {\n        \"full_url\": \"https://pagure.io/user/toshio\"\
+        , \n        \"fullname\": \"Toshio \\u304f\\u3089\\u3068\\u307f\", \n    \
+        \    \"name\": \"toshio\", \n        \"url_path\": \"user/toshio\"\n     \
+        \ }, \n      \"blocks\": [], \n      \"close_status\": \"Fixed\", \n     \
+        \ \"closed_at\": null, \n      \"closed_by\": null, \n      \"comments\":\
+        \ [\n        {\n          \"comment\": \"This information isn't kept in the\
+        \ database.  I've added it to the template for now but we need to keep the\
+        \ information separately in the next version of the voting application.\"\
+        , \n          \"date_created\": \"1183592827\", \n          \"edited_on\"\
+        : null, \n          \"editor\": null, \n          \"id\": 11398, \n      \
+        \    \"notification\": false, \n          \"parent\": null, \n          \"\
+        reactions\": {}, \n          \"user\": {\n            \"full_url\": \"https://pagure.io/user/toshio\"\
+        , \n            \"fullname\": \"Toshio \\u304f\\u3089\\u3068\\u307f\", \n\
+        \            \"name\": \"toshio\", \n            \"url_path\": \"user/toshio\"\
         \n          }\n        }\n      ], \n      \"content\": \"The current vote\
         \ does not show, that there are three free seats\\r\\nto be taken, which is\
         \ an useful information for the voting page, imho.\", \n      \"custom_fields\"\
@@ -3533,21 +3688,21 @@ interactions:
         , \n    \"last\": \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=346\"\
         , \n    \"next\": null, \n    \"page\": 346, \n    \"pages\": 346, \n    \"\
         per_page\": 35, \n    \"prev\": \"https://pagure.io/api/0/fedora-infrastructure/issues?per_page=35&status=all&page=345\"\
-        \n  }, \n  \"total_issues\": 5\n}\n"
+        \n  }, \n  \"total_issues\": 6\n}\n"
     headers:
       Connection:
       - Upgrade, Keep-Alive
       Content-Length:
-      - '10152'
+      - '12244'
       Content-Security-Policy:
-      - default-src 'self';script-src 'self' 'nonce-oMIuYyo7BgeHJWLFfZeKS88e9'; style-src
-        'self' 'nonce-oMIuYyo7BgeHJWLFfZeKS88e9'; object-src 'none';base-uri 'self';img-src
+      - default-src 'self';script-src 'self' 'nonce-gF0ICumRodFUJr4mrNFYSgx36'; style-src
+        'self' 'nonce-gF0ICumRodFUJr4mrNFYSgx36'; object-src 'none';base-uri 'self';img-src
         'self' https:;connect-src 'self' https://pagure.io:8088;frame-src https://docs.pagure.org;frame-ancestors
         https://pagure.io;
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Jan 2025 09:52:16 GMT
+      - Thu, 16 Jan 2025 19:51:54 GMT
       Keep-Alive:
       - timeout=5, max=100
       Referrer-Policy:
